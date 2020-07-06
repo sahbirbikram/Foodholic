@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu List | Foodholic</title>
+
+    <link rel="stylesheet" href="vendors/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+    <header id="header" class="fixed-top">
+        <div class="container">
+
+            <a class="logo" href="#">Foodholic</a>
+
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Restaurants</a></li>
+                    <li><a href="#">Our Menu</a></li>
+                    <li class="my-cart" onclick="openModal()"><a href="#"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;<span class="cart-item-number">[&nbsp;2&nbsp;]</span></a></li>
+                </ul>
+            </nav>
+        </div>
+        <button class="mobile-nav-toggle d-lg-none" onclick="openNav()" type="button">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="mobile-nav d-lg-none">
+            <button class="mobile-nav-close" onclick="closeNav()" type="button">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Restaurants</a></li>
+                <li><a href="#">Our Menu</a></li>
+                <li class="my-cart" onclick="openModal()"><a href="#"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;<span class="cart-item-number">[&nbsp;2&nbsp;]</span></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- =========== home ====================== -->
+    <section id="home" class="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="home-title">Welcome to <span>Foodholic</span></h1>
+                    <h2 class="home-description">Delivering great food at your doorstep.</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============== Menu Section ====================== -->
+    <section id="menu" class="menu">
+        <div class="row ">
+            <div class="col-md-12">
+                <h2 class="menu-title  section-padding">Menu List at <span> Foodholic</span></h2>
+            </div>
+        </div>
+
+        <div class="container">
+            
+            <div class="row no-gutters">
+                <div class="col-md-3">
+                    <div class="list-nav sticky-top">
+                        <ul>
+                            <li><a href="#burger">Burgers</a></li>
+                            <li><a href="#pasta">Pasta</a></li>
+                            <li><a href="#pizza">Pizza</a></li>
+                            <li><a href="#momo">Mo:Mo</a></li>
+                            <li><a href="#drinks">Drinks</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="menu-list">
+                        <div class="burger" id="burger">
+                            <div class="bg-burger"></div>
+                            <h2 class="list-title">Burger</h2>
+                            <div class="item-display">
+                                <div class="left">
+                                    <h4 class="item-name">Chicken Burger</h4>
+                                    <p class="item-description">Chicken, Cheese, Fries, Onion, Potato</p>
+                                </div>
+                                <div class="right">
+                                    <p class="item-price">$8.00</p>
+                                    <button id="addCart" class="btn btn-outline-primary add-to-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="item-display">
+                                <div class="left">
+                                    <h4 class="item-name">Turkey Burger</h4>
+                                    <p class="item-description">Turkey, Cheese, Fries, Onion, Potato</p>
+                                </div>
+                                <div class="right">
+                                    <p class="item-price">$12.00</p>
+                                    <button class="btn btn-outline-primary add-to-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="item-display">
+                                <div class="left">
+                                    <h4 class="item-name">Veg Burger</h4>
+                                    <p class="item-description">Cabbage, Cheese, Fries, Onion, Potato</p>
+                                </div>
+                                <div class="right">
+                                    <p class="item-price">$4.00</p>
+                                    <button class="btn btn-outline-primary add-to-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="item-display">
+                                <div class="left">
+                                    <h4 class="item-name">Wild Salmon Burger</h4>
+                                    <p class="item-description">Wild Salmon, Cheese, Fries, Onion, Potato</p>
+                                </div>
+                                <div class="right">
+                                    <p class="item-price">$15.00</p>
+                                    <button class="btn btn-outline-primary add-to-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pasta" id="pasta">
+                            <div class="bg-pasta"></div>
+                            <h2 class="list-title">Pasta</h2>
+                            <div class="item-display">
+                                <div class="left">
+                                    <h4 class="item-name">Lasagne</h4>
+                                    <p class="item-description">Chicken, Cheese, Fries, Onion, Potato</p>
+                                </div>
+                                <div class="right">
+                                    <p class="item-price">$8.00</p>
+                                    <button class="btn btn-outline-primary add-to-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="item-display">
+                                <div class="left">
+                                    <h4 class="item-name">Spaghetti</h4>
+                                    <p class="item-description">Turkey, Cheese, Fries, Onion, Potato</p>
+                                </div>
+                                <div class="right">
+                                    <p class="item-price">$12.00</p>
+                                    <button class="btn btn-outline-primary add-to-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="item-display">
+                                <div class="left">
+                                    <h4 class="item-name">Macaroni</h4>
+                                    <p class="item-description">Cabbage, Cheese, Fries, Onion, Potato</p>
+                                </div>
+                                <div class="right">
+                                    <p class="item-price">$4.00</p>
+                                    <button class="btn btn-outline-primary add-to-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="item-display">
+                                <div class="left">
+                                    <h4 class="item-name">Ravioli</h4>
+                                    <p class="item-description">Wild Salmon, Cheese, Fries, Onion, Potato</p>
+                                </div>
+                                <div class="right">
+                                    <p class="item-price">$15.00</p>
+                                    <button class="btn btn-outline-primary add-to-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pizza" id="pizza">
+                            <div class="bg-pizza"></div>
+                            <h2 class="list-title">Pizza</h2>
+                            <div class="item-display">
+                                <div class="left">
+                                    <h4 class="item-name">Chicken Pizza</h4>
+                                    <p class="item-description">Chicken, Cheese, Fries, Onion, Potato</p>
+                                </div>
+                                <div class="right">
+                                    <p class="item-price">$8.00</p>
+                                    <button class="btn btn-outline-primary add-to-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="item-display">
+                                <div class="left">
+                                    <h4 class="item-name">Cheese Pizza</h4>
+                                    <p class="item-description">Turkey, Cheese, Fries, Onion, Potato</p>
+                                </div>
+                                <div class="right">
+                                    <p class="item-price">$12.00</p>
+                                    <button class="btn btn-outline-primary add-to-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="item-display">
+                                <div class="left">
+                                    <h4 class="item-name">Pepperoni Pizza</h4>
+                                    <p class="item-description">Cabbage, Cheese, Fries, Onion, Potato</p>
+                                </div>
+                                <div class="right">
+                                    <p class="item-price">$4.00</p>
+                                    <button class="btn btn-outline-primary add-to-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="item-display">
+                                <div class="left">
+                                    <h4 class="item-name">Hawaiian Pizza</h4>
+                                    <p class="item-description">Wild Salmon, Cheese, Fries, Onion, Potato</p>
+                                </div>
+                                <div class="right">
+                                    <p class="item-price">$15.00</p>
+                                    <button class="btn btn-outline-primary add-to-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="momo" id="momo">
+                            <div class="bg-momo"></div>
+                            <h2 class="list-title">Mo::Mo</h2>
+                            <div class="item-display">
+                                <div class="left">
+                                    <h4 class="item-name">Chicken Mo:Mo</h4>
+                                    <p class="item-description">Chicken, Cheese, Fries, Onion, Potato</p>
+                                </div>
+                                <div class="right">
+                                    <p class="item-price">$8.00</p>
+                                    <button class="btn btn-outline-primary add-to-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="item-display">
+                                <div class="left">
+                                    <h4 class="item-name">Turkey Mo:Mo</h4>
+                                    <p class="item-description">Turkey, Cheese, Fries, Onion, Potato</p>
+                                </div>
+                                <div class="right">
+                                    <p class="item-price">$12.00</p>
+                                    <button class="btn btn-outline-primary add-to-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="item-display">
+                                <div class="left">
+                                    <h4 class="item-name">Veg Mo:Mo</h4>
+                                    <p class="item-description">Cabbage, Cheese, Fries, Onion, Potato</p>
+                                </div>
+                                <div class="right">
+                                    <p class="item-price">$4.00</p>
+                                    <button class="btn btn-outline-primary add-to-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="item-display">
+                                <div class="left">
+                                    <h4 class="item-name">Buff Mo:Mo</h4>
+                                    <p class="item-description">Wild Salmon, Cheese, Fries, Onion, Potato</p>
+                                </div>
+                                <div class="right">
+                                    <p class="item-price">$15.00</p>
+                                    <button class="btn btn-outline-primary add-to-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="drinks" id="drinks">
+                            <div class="bg-drinks"></div>
+                            <h2 class="list-title">Drinks</h2>
+                            <div class="item-display">
+                                <div class="left">
+                                    <h4 class="item-name">Coca Cola</h4>
+                                    <p class="item-description">Chicken, Cheese, Fries, Onion, Potato</p>
+                                </div>
+                                <div class="right">
+                                    <p class="item-price">$8.00</p>
+                                    <button class="btn btn-outline-primary add-to-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="item-display">
+                                <div class="left">
+                                    <h4 class="item-name">Mountain Dew</h4>
+                                    <p class="item-description">Turkey, Cheese, Fries, Onion, Potato</p>
+                                </div>
+                                <div class="right">
+                                    <p class="item-price">$12.00</p>
+                                    <button class="btn btn-outline-primary add-to-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="item-display">
+                                <div class="left">
+                                    <h4 class="item-name">Sprite</h4>
+                                    <p class="item-description">Cabbage, Cheese, Fries, Onion, Potato</p>
+                                </div>
+                                <div class="right">
+                                    <p class="item-price">$4.00</p>
+                                    <button class="btn btn-outline-primary add-to-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="item-display">
+                                <div class="left">
+                                    <h4 class="item-name">Fanta</h4>
+                                    <p class="item-description">Wild Salmon, Cheese, Fries, Onion, Potato</p>
+                                </div>
+                                <div class="right">
+                                    <p class="item-price">$15.00</p>
+                                    <button class="btn btn-outline-primary add-to-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div id="modal-cart" class="modal-cart">
+            <div class="modal-cart-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div class="modal-bg">
+                    <!-- <div class="bg-burger"></div> -->
+                    <h2 class="modal-title">Foodholic</h2>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-lg-7">
+                        <div class="all-added-items">
+                            <h2 class="cart-title">
+                                Added Items
+                            </h2>
+                            <div class="items-list">
+                                <!-- <div class="item" id="item-0">
+                                    <div class="left">
+                                        <i class="far fa-times-circle item-delete--btn"></i>
+                                        <span class="item-description">Pizza</span>
+                                        <sup class="item-rate">@ $12 per pcs</sup>    
+                                    </div>
+                                    <div class="right">
+                                        <div class="item-quantity"><i class="fas fa-plus-circle increment-btn"></i><span class="quantity">1 pcs</span><i class="fas fa-minus-circle decrement-btn"></i></div>
+                                        <div class="item-amount">$12</div>
+                                    </div>
+                                </div>
+                                <div class="item" id="item-0">
+                                    <div class="left">
+                                        <i class="far fa-times-circle item-delete--btn"></i>
+                                        <span class="item-description">Pizza</span> 
+                                        <sup class="item-rate">@ $12 per pcs</sup>       
+                                    </div>
+                                    <div class="right">
+                                        <div class="item-quantity"><i class="fas fa-plus-circle increment-btn"></i><span class="quantity">1 pcs</span><i class="fas fa-minus-circle decrement-btn"></i></div>
+                                        <div class="item-amount">$12</div>
+                                    </div>
+                                </div> -->
+                            </div>
+    
+                            <button class="btn add-more" onclick="closeModal()"><i class="fas fa-cart-plus"></i> &nbsp; Add More Items...</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="pricing">
+                            <div class="row coupon-border">
+                                <div class="col-md-12 mb-3 text-center">
+                                    <h2 class="cart-title">
+                                        Any Coupons ?<br> Apply here &amp; get discount.
+                                    </h2>
+                                    <input type="text" class="input-coupon mt-2 mb-2" placeholder="Coupon ID">
+                                </div>
+                            </div>
+        
+                            <div class="row">
+                                <div class="col-md-12 mt-4">
+                                    <h2 class="cart-title mb-4">
+                                        Cart Totals
+                                    </h2>
+                                    <div class="row no-gutters">
+                                        <div class="col-md-12">
+                                            <div class="calc">
+                                                <span class="cart-subtotal">Subtotal</span>
+                                                <span class="cart-subtotal-amount">$200</span>
+                                            </div>
+                                            <div class="calc">
+                                                <span class="cart-delivery-charge">Delivery Charge</span>
+                                                <span class="cart-delivery-charge-amount">$20</span>
+                                            </div>
+                                            <div class="calc">
+                                                <span class="cart-coupon-discount">Coupon Discount</span>
+                                                <span class="cart-coupon-discount-amount">-$30</span>
+                                            </div>
+                                            <div class="calc">
+                                                <span class="cart-grand-total">Grand Total</span>
+                                                <span class="cart-grand-total-amount">$300</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn confirm-order"> Confirm Order &amp; Pay</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="footer-top section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-info">
+                            <h3>Foodholic</h3>
+                            <p>Gusingaal, Lalitpur, Nepal<br><br>
+                            <strong>Phone:</strong> 9845632155<br>
+                            <strong>Email:</strong> foodholic@foodholic.com<br>
+                            </p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Menu</h4>
+                        <ul>
+                            <li><i class="fas fa-chevron-right"></i><a href="#">Home</a></li>
+                            <li><i class="fas fa-chevron-right"></i><a href="#">About</a></li>
+                            <li><i class="fas fa-chevron-right"></i><a href="#">Menu</a></li>
+                            <li><i class="fas fa-chevron-right"></i><a href="#">Restaurants</a></li>
+                            <li><i class="fas fa-chevron-right"></i><a href="#">Make an Order</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Help and FAQs</h4>
+                        <ul>
+                            <li><i class="fas fa-chevron-right"></i><a href="#">FAQs</a></li>
+                            <li><i class="fas fa-chevron-right"></i><a href="#">Shipping Information</a></li>
+                            <li><i class="fas fa-chevron-right"></i><a href="#">Returns and Exchange</a></li>
+                            <li><i class="fas fa-chevron-right"></i><a href="#">Terms &amp; Conditions</a></li>
+                            <li><i class="fas fa-chevron-right"></i><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Our Newsletter</h4>
+                        <p>Get e-mail updates about our latest shops and special offers</p>
+                        <form action="">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Foodholic</span></strong>. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
