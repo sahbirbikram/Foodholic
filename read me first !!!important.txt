@@ -1,0 +1,26 @@
+
+
+/********** FOODHOLIC Instructions *************************************/
+*									*
+* Open menu.html file							*
+* All available food products will be visible.				*
+*									*
+* To buy the food product, click on Cart Icon on right hand side 	*
+*   of each item.							*
+*									*
+* To view My Cart, click on the Cart icon in Navigation Menu		*
+*									*
+* To close My Cart, click outside of My Cart window			*
+*   	OR click on the close icon on top right of the My Cart 		*
+*	    window							*
+*	OR click on the Add More Items button to go back to menu	*
+*	    list							*
+*									*
+* Coupon Input Box accepts only six characters (alphabets or 		*
+*	numbers or both) and press enter. It will generate random amount for 		*
+*	coupon discount.						*
+*									*
+*									*
+*									*
+/***********************************************************************/
+
